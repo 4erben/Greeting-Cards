@@ -8,6 +8,8 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import Header from "./assets/header.jpg";
 import HomePage from './Pages/HomePage';
 import home from "./assets/home.jpg";
+import CardsPage from './Pages/CardsPage';
+import ImageEditor from './Components/ImageEditor';
 function App() {
 
   return (
@@ -16,7 +18,7 @@ function App() {
       <img src={Header} className='img-fluid w-50 mx-auto '/>
     </Row>
     <Row>
-    <Link to="/" className='mx-auto  w-50'> 
+    <Link to="/" className='mx-auto  w-75'> 
     <img src={home} className='img-fluid '/>
     </Link>
     </Row>
@@ -25,9 +27,13 @@ function App() {
       path='/'
       element={<HomePage />}
       />
+      <Route
+      path='/:id'
+      element={<CardsPage/>}
+      />
     <Route
     path='/card/:id'
-    element={<CaptureComponent/>}
+    element={<ImageEditor/>}
     />
     </Routes>
 

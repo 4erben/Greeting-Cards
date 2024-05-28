@@ -3,12 +3,14 @@ import {Button, Col, Container, FormControl, FormGroup, FormLabel, Row} from "re
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import html2canvas from "html2canvas";
-import aid from "../assets/cards/Aid.jpg";
+
 import pics from "../data/data.jsx";
 export default function CaptureComponent() {
     const params = useParams();
-    const cardId = params.id;
+    const cardId = params.id.split("-")[1];
+    const cardLetter = params.id.split("-")[0];
     const cardData = pics.find((element)=> {return element.no == cardId});
+    const data = cardData[cardLetter];
     const [from , setFrom] = useState("");
     const [to , setTo] = useState("");
     const captureAsJPG = ()=>{
@@ -25,18 +27,20 @@ export default function CaptureComponent() {
     <Container fluid className='w-50 py-5'>
         {/* Input Row */}
         <Row>
-        <Col className='col-12'>
+        <Col className='col-12 rtl'>
             <FormGroup >
-                <FormLabel>اهداء الي</FormLabel>
+                <FormLabel>اهداء من</FormLabel>
                 <FormControl type='text' onChange={(e)=>{setFrom(e.target.value)}} />
             </FormGroup>
         </Col>
-        <Col className='col-12'>
-            <FormGroup >
-                <FormLabel>اهداء من</FormLabel>
-                <FormControl type='text' onChange={(e)=>{setTo(e.target.value)}} />
-            </FormGroup>
+        {true?
+        <Col className='col-12 rtl'>
+        <FormGroup >
+            <FormLabel>اهداء الي</FormLabel>
+            <FormControl type='text' onChange={(e)=>{setTo(e.target.value)}} />
+        </FormGroup>
         </Col>
+        :null}
         </Row>
         {/* Canvas Row */}
         <Row >
@@ -47,16 +51,16 @@ export default function CaptureComponent() {
         >
             <Row  className='justify-content-center align-items-center'>
                 <Row className='text-center fw-bold fs-3'>
-                <p>{cardData.title}</p>
+                <p>{data.title}</p>
                 </Row>
             
                 <Row className='bg-white rounded my-2 text-end fw-bold'>
                     <p className='rtl'> من: {from}</p>
                 </Row>
                 <Row className='col-12 justify-content-center text-center w-75'>
-                <p className=' fs-3'>{cardData.body}</p>
+                <p className=' fs-3'>{data.body}</p>
                 </Row>
-                {cardData.double?
+                {true?
                 <Row className='bg-white rounded my-2 text-end fw-bold'>
                     <p className='rtl'> الي: {to}</p>
                 </Row>:null}

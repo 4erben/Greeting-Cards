@@ -21,32 +21,206 @@ import p20 from "../assets/20.jpg";
 import p21 from "../assets/21.jpg";
 import p22 from "../assets/22.jpg";
 import p23 from "../assets/23.jpg";
+/* cards */
+import a1 from "../assets/card/1-a.jpg";
+import b1 from "../assets/card/1-b.jpg";
+import a2 from "../assets/card/2-a.jpg";
+import b2 from "../assets/card/2-b.jpg";
+import a3 from "../assets/card/3-a.jpg";
+import b3 from "../assets/card/3-b.jpg";
+import a4 from "../assets/card/4-a.jpg";
+import b4 from "../assets/card/4-b.jpg";
+import a5 from "../assets/card/5-a.jpg";
+import b5 from "../assets/card/5-b.jpg";
+import a6 from "../assets/card/6-a.jpg";
+import b6 from "../assets/card/6-b.jpg";
+import a7 from "../assets/card/7-a.jpg";
+import b7 from "../assets/card/7-a.jpg";
+import a8 from "../assets/card/8-a.jpg";
+import b8 from "../assets/card/8-a.jpg";
+import a9 from "../assets/card/9-a.jpg";
+import b9 from "../assets/card/9-a.jpg";
+import a10 from "../assets/card/10-a.jpg";
+import b10 from "../assets/card/10-b.jpg";
+import a11 from "../assets/card/11-a.jpg";
+import b11 from "../assets/card/11-a.jpg";
+import a12 from "../assets/card/12-a.jpg";
+import b12 from "../assets/card/12-a.jpg";
+import a13 from "../assets/card/13-a.jpg";
+import b13 from "../assets/card/13-b.jpg";
+import a14 from "../assets/card/14-a.jpg";
+import b14 from "../assets/card/14-b.jpg";
+import a15 from "../assets/card/15-a.jpg";
+import b15 from "../assets/card/15-b.jpg";
+import a16 from "../assets/card/16-a.jpg";
+import b16 from "../assets/card/16-a.jpg";
+import a17 from "../assets/card/17-a.jpg";
+import b17 from "../assets/card/17-a.jpg";
+import a18 from "../assets/card/18-a.jpg";
+import b18 from "../assets/card/18-b.jpg";
+import a19 from "../assets/card/19-a.jpg";
+import b19 from "../assets/card/19-a.jpg";
+import a20 from "../assets/card/20-a.jpg";
+import b20 from "../assets/card/20-b.jpg";
+import a21 from "../assets/card/21-a.jpg";
+import b21 from "../assets/card/21-a.jpg";
+import a23 from "../assets/card/23-a.jpg";
+import b23 from "../assets/card/23-a.jpg";
 
 
  const pics = [
-    {no:1,pic:p1,title:"امي الغالية",body:"يا قلبا علمني الحب باغلي المعاني يامن لا توفيك عبارات الشكر و الامتنان ولا تجزيك حروف نقشها في الوجد  البنان لك يا مهجة الوجدان اهديك سهما في مبني المساجد  بمكة  المكرمة  التابع لجمعية العناية بالمساجد بعقلة  الصقور صدقة جارية في الدارين اسأل المولي لك به ظلا ظليلا وسعدا و فرجا  قريبا",double:false},
-    {no:2,pic:p2,double:true,title:"سقيا الماء",body:"لعظم قدركم عندي ومحبتي لكم اهديكم سهما في مشروع سقيا الماء بمبني المساجد بمكة المكرمة التابع لجمعية العناية بالمساجد بعقلة الصقور صدقة جارية في الدارين في  الدنيا و الاخرة"},
-    {no:3,pic:p3,title:"انت فرحة العيد و جماله اهديك سهما في مبني المساجد بمكة المكرمة التابع لجمعية العناية بالمساجد بعقلة الصقور و الفرحة فرحتين في الدنيا و الاخرة",double:true},
-    {no:4,pic:p4 ,double:true},
-    {no:5,pic:p5,double:true},
-    {no:6,pic:p6,double:true},
-    {no:7,pic:p7,double:true},
-    {no:8,pic:p8,double:true},
-    {no:9,pic:p9,double:true},
-    {no:10,pic:p10,double:true},
-    {no:11,pic:p11,double:true},
-    {no:12,pic:p12,double:true},
-    {no:13,pic:p13,double:true},
-    {no:14,pic:p14,double:true},
-    {no:15,pic:p15,double:true},
-    {no:16,pic:p16,double:true},
-    {no:17,pic:p17,double:true},
-    {no:18,pic:p18,double:true},
-    {no:19,pic:p19,double:true},
-    {no:20,pic:p20,double:true},
-    {no:21,pic:p21,double:true},
-    {no:22,pic:p22,double:true},
-    {no:23,pic:p23,double:true}
+    {   no:1,
+        pic:p1,
+        a:a1,
+        b:b1,
+        double: false
+    },
+    {   no:2,
+        pic:p2,
+        double:true,
+        a:a2,
+        b:b2
+    },
+    /* {   
+        no: 3,
+        pic: p3,
+        a: a3,
+        b: b3,
+        double: true
+    }, */
+    {   
+        no: 4,
+        pic: p4,
+        double: true,
+        a: a4,
+        b: b4
+    },{   
+        no: 5,
+        pic: p5,
+        a: a5,
+        b: b5,
+        double: true
+    },
+    {   
+        no: 6,
+        pic: p6,
+        double: true,
+        a: a6,
+        b: b6
+    },
+    {   
+        no: 7,
+        pic: p7,
+        a: a7,
+        b: b7,
+        double: true
+    },
+    /* {   
+        no: 8,
+        pic: p8,
+        double: true,
+        a: a8,
+        b: b8
+    }, */
+    {   
+        no: 9,
+        pic: p9,
+        double: true,
+        a: a9,
+        b: b9
+    },
+    {   
+        no: 10,
+        pic: p10,
+        double: true,
+        a: a10,
+        b: b10
+    },
+    {   
+        no: 11,
+        pic: p11,
+        double: true,
+        a: a11,
+        b: b11
+    },
+    {   
+        no: 12,
+        pic: p12,
+        double: true,
+        a: a12,
+        b: b12
+    },
+    /* {   
+        no: 13,
+        pic: p13,
+        double: true,
+        a: a13,
+        b: b13
+    }, */
+    {   
+        no: 14,
+        pic: p14,
+        double: true,
+        a: a14,
+        b: b14
+    },
+    {   
+        no: 15,
+        pic: p15,
+        double: true,
+        a: a15,
+        b: b15
+    },
+    {   
+        no: 16,
+        pic: p16,
+        double: true,
+        a: a16,
+        b: b16
+    },
+    {   
+        no: 17,
+        pic: p17,
+        double: true,
+        a: a17,
+        b: b17
+    },
+    {   
+        no: 18,
+        pic: p18,
+        double: false,
+        a: a18,
+        b: b18
+    },
+    {   
+        no: 19,
+        pic: p19,
+        double: true,
+        a: a19,
+        b: b19
+    },
+    /* {   
+        no: 20,
+        pic: p20,
+        double: true,
+        a: a20,
+        b: b20
+    }, */
+    {   
+        no: 21,
+        pic: p21,
+        double: true,
+        a: a21,
+        b: b21
+    },
+
+    {   
+        no: 23,
+        pic: p23,
+        double: true,
+        a: a23,
+        b: b23
+    }
 ];
 
 export default pics;

@@ -12,7 +12,7 @@ export default function HomePage() {
         pics.map((p)=>{
             return(
                 <Col lg={3} className='p-4' key={p.no}>
-                <Link to={`/card/${p.no}`}>
+                <Link to={`/${p.no}`}>
                     <img src={p.pic} className='img-fluid w-100' />
                 </Link>
                 </Col>
