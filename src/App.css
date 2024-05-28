@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+ #capture{
+  font-family: "Cairo", sans-serif;
+  width: 1460px;
+  height: 800px;
+  align-items: center !important;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+ }
+
+ .rtl{
+  direction: rtl;
+  unicode-bidi: bidi-override;
+ }
