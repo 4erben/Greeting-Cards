@@ -1,5 +1,5 @@
 import React ,{useEffect,useRef, useState} from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Button, Col, Container, FormControl, FormGroup, FormLabel, Row } from 'react-bootstrap';
 import pics from "../data/data.jsx";
 import photo from "../assets/card/2-a.jpg";
@@ -27,7 +27,7 @@ export default function ImageEditor() {
             canvas.width = img.width;
             canvas.height = img.height;
             ctx.drawImage(img, 0, 0,canvas.width,canvas.height);
-            ctx.font = "50px Comic Sans MS";
+            ctx.font = "80px Comic Sans MS";
             ctx.fillStyle = "black";
             ctx.fillText(to,title_1_x,title_1_y)
             ctx.fillText(from,title_2_x,title_2_y)
@@ -47,6 +47,9 @@ export default function ImageEditor() {
     }
   return (
     <Container>
+        <Row>
+            <Link className='btn btn-danger my-2 fw-bold' to={`/${cardId}`}>عد لنوع البطاقة</Link>
+        </Row>
         <Row>
         <Col className='col-12 rtl'>
             <FormGroup >

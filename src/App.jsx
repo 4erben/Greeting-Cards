@@ -18,9 +18,9 @@ function App() {
       <img src={Header} className='img-fluid w-50 mx-auto '/>
     </Row>
     <Row>
-    <Link to="/" className='mx-auto  w-75'> 
+    <a href='https://store.w-quran.com/' className='mx-auto  w-75'> 
     <img src={home} className='img-fluid '/>
-    </Link>
+    </a>
     </Row>
     <Routes>
       <Route

@@ -14,7 +14,9 @@ export default function CardsPage() {
     console.log(cardData);
   return (
     <Container>
+      
         <Row className='justify-content-center align-items-center my-2'>
+        <Link className='btn btn-warning mx-auto fw-bold' to="/">عد للبطاقات</Link>
         <Link className='my-2' to={`/card/a-${id}`}>
             <img src={cardData.a} className='img-fluid card mx-auto'/>
         </Link>
