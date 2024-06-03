@@ -7,7 +7,7 @@ import pics from "../data/data.jsx";
 
 export default function HomePage() {
   return (
-    <Row className='w-lg-50 w-100 mx-auto'>
+    <Row className='w-75  mx-auto'>
     {
         pics.map((p)=>{
             return(

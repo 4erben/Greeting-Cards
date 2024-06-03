@@ -52,15 +52,15 @@ export default function ImageEditor() {
         </Row>
         <Row>
         <Col className='col-12 rtl'>
-            <FormGroup >
-                <FormLabel>اهداء من</FormLabel>
+            <FormGroup className='d-flex flex-column'>
+                <FormLabel className='fw-bold text-warning mx-auto'>اهداء من</FormLabel>
                 <FormControl type='text' onChange={(e)=>{setFrom(e.target.value)}} />
             </FormGroup>
         </Col>
         {cardData.double?
-        <Col className='col-12 rtl'>
-        <FormGroup >
-            <FormLabel>اهداء الي</FormLabel>
+        <Col className='col-12 rtl my-2'>
+        <FormGroup className='d-flex flex-column' >
+            <FormLabel className='fw-bold text-warning mx-auto'>اهداء الي</FormLabel>
             <FormControl type='text' onChange={(e)=>{setTo(e.target.value)}} />
         </FormGroup>
         </Col>
