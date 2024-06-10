@@ -16,7 +16,7 @@ export default function ImageEditor() {
     const title_1_x =1050;
     const title_1_y =500;
     const title_2_x =1050;
-    const title_2_y =1650;
+    const title_2_y =1655;
     const [from , setFrom] = useState("");
     const [to , setTo] = useState("");
     useEffect(() => {
@@ -27,7 +27,7 @@ export default function ImageEditor() {
             canvas.width = img.width;
             canvas.height = img.height;
             ctx.drawImage(img, 0, 0,canvas.width,canvas.height);
-            ctx.font = "80px Comic Sans MS";
+            ctx.font = "90px Comic Sans MS";
             ctx.fillStyle = "black";
             ctx.fillText(to,title_1_x,title_1_y)
             ctx.fillText(from,title_2_x,title_2_y)
@@ -53,14 +53,14 @@ export default function ImageEditor() {
         <Row>
         <Col className='col-12 rtl'>
             <FormGroup className='d-flex flex-column'>
-                <FormLabel className='fw-bold text-warning mx-auto'>اهداء من</FormLabel>
+                <FormLabel className='fw-bold  mx-auto'>اهداء من</FormLabel>
                 <FormControl type='text' onChange={(e)=>{setFrom(e.target.value)}} />
             </FormGroup>
         </Col>
         {cardData.double?
         <Col className='col-12 rtl my-2'>
         <FormGroup className='d-flex flex-column' >
-            <FormLabel className='fw-bold text-warning mx-auto'>اهداء الي</FormLabel>
+            <FormLabel className='fw-bold  mx-auto'>اهداء الي</FormLabel>
             <FormControl type='text' onChange={(e)=>{setTo(e.target.value)}} />
         </FormGroup>
         </Col>

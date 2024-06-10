@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 body{
-    background-image: url("./assets/resize.jpg");
+    /* background-image: url("./assets/resize.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
