@@ -15,7 +15,7 @@ function App() {
   return (
   <Container fluid className='justify-content-center align-items-center'>
     <Row className='justify-content-center align-items-center mb-2'>
-      <img src={Header} className='img-fluid w-50 mx-auto '/>
+      <img src={Header} className='img-fluid w-100 mx-auto '/>
     </Row>
     <Row>
     <a href='https://store.w-quran.com/' className='mx-auto  w-75'> 
